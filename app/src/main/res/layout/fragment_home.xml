@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/colorPrimary">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/poppins_bold"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:text="COVID-19\n States Tracker"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLabeledTotalConfirmed"
+        android:textColor="@color/colorTotalConfirmed"
+        style="@style/LabelFontStyle"
+        android:textSize="18dp"
+        android:text="Total Confirmed"
+        android:layout_marginTop="310dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotalConfirmed"
+        android:textColor="@color/colorTotalConfirmed"
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        style="@style/TotalFontStyle"
+        tools:text="162732"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLabeledTotalDeaths"
+        android:textColor="@color/colorTotalDeaths"
+        style="@style/LabelFontStyle"
+        android:textSize="18dp"
+        android:text="Total Deaths"
+        android:layout_marginTop="390dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotalDeaths"
+        android:textColor="@color/colorTotalDeaths"
+        android:layout_marginTop="410dp"
+        android:layout_centerHorizontal="true"
+        style="@style/TotalFontStyle"
+        tools:text="xxxx"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLabeledTotalRecovered"
+        android:textColor="@color/colorTotalRecovered"
+        style="@style/LabelFontStyle"
+        android:textSize="18dp"
+        android:text="Total Recovered"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotalRecovered"
+        android:textColor="@color/colorTotalRecovered"
+        android:layout_marginTop="490dp"
+        android:layout_centerHorizontal="true"
+        style="@style/TotalFontStyle"
+        tools:text="141700"
+
+
+        />
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_circular_home"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        />
+
+</RelativeLayout>
